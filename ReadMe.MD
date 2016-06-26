@@ -1,15 +1,53 @@
-#Term Project Proposal
+#Term Project Final Report
 
-Member: ì»´í“¨í„°í•™ê³¼ 2013210107 ê¹€ì •ìˆ˜
+Member: ÄÄÇ»ÅÍÇĞ°ú 2013210107 ±èÁ¤¼ö
 
-##Topic : 3D Sky Roads Game ( by Tizen with openGL)
+##Topic : 3D travel Simulation ( by Tizen with openGL)
 
 **Features :**
 
-- 1ì¸ì¹­
-- ê¸°ì¡´ ê³ ì „ ê²Œì„ Sky Roads êµ¬í˜„
-- ë‹¤ì–‘í•œ ë¹„í–‰ê¸° ì„ íƒ ë° ê°ì¢… ë§µ
-- ì¶”í›„ ì¶”ê°€ ê¸°ëŠ¥ ê³ ë ¤
+- 1ÀÎÄª
+- ÀÚÀ¯·Ó°Ô ÁöÁ¤µÈ ¸ÊÀ» µ¹¾Æ´Ù´Ï±â
+- °¢Á¾ ¸Ê ¼±
 
-![ì°¸ê³ 1](https://github.com/kimdog/CG_TermProject/blob/master/images/pic_1.png)
-![ì°¸ê³ 2](https://github.com/kimdog/CG_TermProject/blob/master/images/pic_2.png)
+![Âü°í1](https://github.com/kimdog/CG_TermProject/blob/master/images/term_3.png)
+![Âü°í2](https://github.com/kimdog/CG_TermProject/blob/master/images/term_4.png)
+
+
+
+
+**Contents :**
+
+- ¸Ş´º ±â´ÉÀ» ÅëÇÑ ¸Ê ¼±ÅÃ
+- ÁÂ¿ì, »óÇÏ ½Ã¼±ÀÌµ¿ ( mAt ÁÂÇ¥ º¯È¯, mBodyForward À¯Áö )
+- ÀÌµ¿ ( ¾Õ µÚ ÁÂ ¿ì )
+- ¹è°æÀ½¾Ç On/Off ( ¹«ÇÑ ¹İº¹ Àç»ı )
+- ¿©·¯ Object¸¦ º¹¼öÀÇ Vbo¸¦ ÅëÇØ Load 
+
+
+
+**Process :**
+
+1. ±âº» ¼ö¾÷ Homework template »ç¿ë
+
+2. test_forC.h : 
+	Button event¸¦ ´Ù¸¥ class¿¡¼­ Ã³¸®ÇÏ±â À§ÇÑ Btn °øÀ¯º¯¼ö.
+
+3. basic_camera.cpp : 
+	¸öÀÇ ÀÌµ¿À» À§ÇÑ Move°ü·Ã ÇÔ¼öµé ¼öÁ¤.
+	½Ã¼± ÀÌµ¿À» À§ÇÑ  ViewRotate,  ViewRotateY ÇÔ¼ö ±¸Çö.
+	( mAt°ú mEyeÀÇ ³ôÀÌ Â÷¸¦ ÀÌ¿ëÇÏ¿© »óÇÏ ½Ã¼± Á¦ÇÑ )
+
+4. basic_renderer.cpp : 
+	±âÁ¸ Vbo »ı¼º, bind ¹× Ã³¸® ÇÔ¼öµéÀ» ObjectÀÇ °³¼ö¸¸Å­ 
+	Vbo¸¦ »ı¼ºÇÏ±â À§ÇØ _multi ¹öÀüÀ¸·Î Àç±¸Çö ? 
+	sample.c ÄÚµå º¯È­.
+	( ÇÏ³ªÀÇ object¸¦ Ç¥ÇöÇÏ´Â ObjectSturct¿¡ ´ëÇÏ¿©
+	std::vector<ObjectSturct> myObjects  ¿©·¯ Object ÀúÀå º¤ÅÍ. )
+
+5. 3D max¸¦ ÅëÇÏ¿© °¢ ObjectÀÇ vertex, texture... 
+	µ¥ÀÌÅÍµéÀ» objÆÄÀÏ ÇüÅÂ·Î ÀúÀå ÈÄ ºÒ·¯¿À±â .
+
+6. User_callbacks.c ÀÇ wav_player.h¸¦ ÀÌ¿ëÇÑ ¹è°æÀ½¾Ç ±â´É.
+	±âº» template¸¦ »ç¿ëÇÏµÇ, ¹«ÇÑ ¹İº¹Àç»ıÀ» À§ÇÑ ÄÚµå ¼öÁ¤.
+
